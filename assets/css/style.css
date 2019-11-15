@@ -1,0 +1,91 @@
+body {
+    background: green;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.userCardContainer {
+    box-sizing: border-box;
+    max-width: 1200px;
+
+}
+
+.userCard {
+    position: relative;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0px 20px 30px lightgray;
+    padding: 30px;
+}
+
+.userCard:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.subContainer {
+    width: 97%;
+    position: relative;
+    background: white;
+    margin: 0 auto;
+
+}
+
+.subContainer > .iconContainer {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+.userCard > .userPhoto {
+    margin-right: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Превращаем в круг */
+    background-image: url(./../img/francesco.jpeg); /* Параметры фона */
+    background-repeat: no-repeat;
+    background-size: cover; /* Высота фотографии равна высоте элемента */
+}
+
+
+
+.userCard > .userPhoto, .userCard > .infoAboutUser {
+   display: inline-block;
+   padding-right: 30px;
+   vertical-align: middle;
+}
+
+
+
+.userCard > .infoAboutUser > h2 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.userCard > .infoAboutUser > h3 {
+    font-weight: 500;
+    color: green;
+    font-size: 25px;
+}
+
+.userCard > .infoAboutUser > span {
+    font-size: 25px;
+}
+
+.iconStyles {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.iconStyles > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
